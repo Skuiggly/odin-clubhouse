@@ -1,0 +1,36 @@
+{
+  "name": "odin-clubhouse",
+  "version": "1.0.0",
+  "description": "An app where members post content anonymously and can join clubhouses to share content with likeminded people. An assignment project from [The Odin Project](www.theodinproject.com)",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/app.js",
+    "dev": "nodemon -e ts -e ejs -w src/**/* -w dist/views/**/* -x \"npm run build && npm run start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skuiggly/odin-clubhouse.git"
+  },
+  "author": "Skuiggly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Skuiggly/odin-clubhouse/issues"
+  },
+  "homepage": "https://github.com/Skuiggly/odin-clubhouse#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.3",
+    "@types/express": "^4.17.13",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^18.0.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.18",
+    "typescript": "^4.7.4"
+  }
+}
